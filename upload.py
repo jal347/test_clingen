@@ -31,7 +31,7 @@ class ClingenUploader(biothings.hub.dataload.uploader.BaseSourceUploader):
 
     @classmethod
     def get_mapping(klass):
-        return         {
+        return {
             'clingen': {
                 'properties': {
                     'clinical_validity': {
@@ -71,4 +71,3 @@ class ClingenUploader(biothings.hub.dataload.uploader.BaseSourceUploader):
                 }
             }
         }
-
