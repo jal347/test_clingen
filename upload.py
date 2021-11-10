@@ -41,8 +41,7 @@ class ClingenUploader(biothings.hub.dataload.uploader.BaseSourceUploader):
                                 'type': 'keyword'
                             },
                             'classification_date': {
-                                "normalizer": "keyword_lowercase_normalizer",
-                                "type": "keyword"
+                                "type": "date"
                             },
                             'disease_label': {
                                 'type': 'text'
