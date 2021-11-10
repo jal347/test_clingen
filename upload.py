@@ -40,13 +40,24 @@ class ClingenUploader(biothings.hub.dataload.uploader.BaseSourceUploader):
                                 'normalizer': 'keyword_lowercase_normalizer',
                                 'type': 'keyword'
                             },
+                            'classification_date': {
+                                "normalizer": "keyword_lowercase_normalizer",
+                                "type": "keyword"
+                            },
                             'disease_label': {
                                 'type': 'text'
+                            },
+                            "gcep": {
+                                "type": "text"
                             },
                             'mondo': {
                                 'copy_to': ['all'],
                                 'normalizer': 'keyword_lowercase_normalizer',
                                 'type': 'keyword'
+                            },
+                            "moi": {
+                                "normalizer": "keyword_lowercase_normalizer",
+                                "type": "keyword"
                             },
                             'online_report': {
                                 'index': False,
